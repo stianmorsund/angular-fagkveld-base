@@ -12,10 +12,4 @@ describe('angular-fagkveld App', () => {
     expect(page.getParagraphText()).toEqual('Andeby');
   });
 
-  it('should filter results when I search for \"Donald\"', async() => {
-    await page.navigateTo();
-    await page.searchFor('Donald');
-    const numberOfResults = await page.getNumberOfResults();
-    expect(numberOfResults).toBe(1);
-  });
 });
